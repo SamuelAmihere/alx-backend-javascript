@@ -15,4 +15,3 @@ rl.question('', (name) => {
   console.log(`Your name is: ${name}`);
   rl.close();
 });
-
