@@ -2,7 +2,6 @@
  * Write a script that reads and waits for user input using
  * stdin.
  */
-
 const readline = require('readline');
 
 const rl = readline.createInterface({
