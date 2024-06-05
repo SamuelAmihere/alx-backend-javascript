@@ -1,11 +1,9 @@
 process.stdout.write('Welcome to Holberton School, what is your name?\n');
-
 process.stdin.on('readable', () => {
-  const name = process.stdin.read();
-  if (name) {
-    process.stdout.write(`Your name is: ${name}`);
-  } else {
-    process.stdout.write('You need to provide a name\n');
+  const inp = process.stdin.read();
+
+  if (inp) {
+    process.stdout.write(`Your name is: ${inp}`);
   }
 });
 process.stdin.on('end', () => {
