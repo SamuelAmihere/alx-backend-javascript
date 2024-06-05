@@ -1,8 +1,8 @@
 const fs = require('fs');
 const csv = require('csv-parser');
 
-function countStudents(path) {
-  if (!fs.existsSync(path)) {
+const countStudents = (path) => {
+  if (!fs.existsSync(path) || !fs.statSync(path).isFile()) {
     throw new Error('Cannot load the database');
   }
 
@@ -30,6 +30,6 @@ function countStudents(path) {
         }
       }
     });
-}
+};
 
 module.exports = countStudents;
