@@ -6,6 +6,10 @@ const countStudents = (path) => new Promise((resolve, reject) => {
       reject(Error('Cannot load the database'));
       return;
     }
+    if (!data) {
+      reject(Error('No data'));
+      return;
+    }
     const lines = data.split('\n').slice(1, -1);
     console.log(`Number of students: ${lines.length}`);
     const fields = {};
