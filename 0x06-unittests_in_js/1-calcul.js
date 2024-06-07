@@ -10,7 +10,7 @@ const calculateNumber = (type, a, b) => {
       case 'DIVIDE':
         return numB === 0 ? 'Error' : numA / numB;
       default:
-        return 'Error';
+        return 0;
     }
   };
 
