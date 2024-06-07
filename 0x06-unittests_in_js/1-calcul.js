@@ -1,7 +1,7 @@
 const calculateNumber = (type, a, b) => {
     const numA = Math.round(a);
     const numB = Math.round(b);
-  
+
     switch (type) {
       case 'SUM':
         return numA + numB;
